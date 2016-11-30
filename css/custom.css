@@ -90,9 +90,11 @@ section {
 
 .badge-store {
   height: 80px;
+  margin: 25px 30px;
 }
 
 .badge-store:hover {
+  margin-top: 15px;
 }
 
 #footer {
@@ -163,11 +165,6 @@ section {
 
   .badge-store {
     height: 60px;
-    margin: 20px 40px 0px 40px;
-  }
-
-  .bagde-store:hover {
-    margin-top: 10px;
   }
 
   #footer {
