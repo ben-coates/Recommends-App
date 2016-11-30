@@ -2,50 +2,155 @@
 <html>
 	<head>
 		<title>Recommends</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- BOOTSTRAP!!! Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-		<!-- Compressed CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
-	</head>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+ 	</head>
 	<body>
-<<<<<<< HEAD
-		<div class="top-bar">
-			<div class="top-bar-title">
-			    <strong>Recommends</strong>
-			</div>
-		    <div class="align-right">
-			    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-			    	<button class="menu-icon dark" type="button" data-toggle></button>
-			    </span>
+		<nav class="navbar navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="images/logo.png"/>Recommends</a>
 		    </div>
-		  	<div id="responsive-menu">
-		    	<div class="top-bar-right">
-		    		<ul class="vertical dropdown menu" data-dropdown-menu>
-		        		<li><a href="#">One</a></li>
-		        		<li><a href="#">Two</a></li>
-		        		<li><a href="#">Three</a></li>
-		      		</ul>
-		    	</div>
-		  	</div>
-		</div>
-		<div class="container">
-			<div class="well">
-			Hello World
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="active"><a href="#">Home</a></li>
+		        <li><a href="#">Features</a></li>
+		        <li><a href="#">Usage</a></li>
+						<li><a href="#">Contact</a></li>
+		      </ul>
+		    </div>
+				<button type="button" class="btn btn-cta btn-nav" name="Download"><i class="fa fa-download" aria-hidden="true"></i></button>
+		  </div>
+		</nav>
+		<section id="banner-home" class="banner banner-full">
+			<div class="container">
+				<div class="banner-title">
+					<h1>Recommends</h1>
+					<h4>from Friends</h4>
+					<button type="button" class="btn btn-cta" name="Download"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download Now</button>
+				</div>
 			</div>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!-- Compressed JavaScript -->
-		<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
-		<script>
-    		$(document).foundation();
-  		</script>
-=======
-		Hello World
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="text-point">
+							<h1 class="caps">Live Confidently</h1>
+							<p>Get recommendations from people you trust</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<img class="img-responsive img-demo" src="images/live-confidently.png"/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr id="hr-demo">
+
+		<section>
+			<div class="container">
+				<div class="col-md-8 col-md-push-4">
+					<div class="text-point text-right">
+						<h1 class="caps">Feel Great</h1>
+						<p>Help your friends out! Give them a recommendation</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-pull-8">
+					<img id="image-demo2" class="img-responsive img-demo" src="images/feel-great.png"/>
+				</div>
+			</div>
+		</section>
+
+		<section id="banner-users" class="banner banner-half">
+			<div class="container">
+				<div>
+					<h1 class="caps">1,024,032 users</h1>
+					<h2>Are your friends waiting?</h2>
+					<button type="button" class="btn btn-cta" name="users">Check and See</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="features">
+			<div class="container text-center">
+				<h1>Features</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<a href"#">
+							<div class="well">
+								<span class="icons-features"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+								<h3>Time</h3>
+								<h3>Limits</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href"#">
+							<div class="well">
+								<span class="icons-features"><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+								<h3>Location</h3>
+								<h3>Services</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href"#">
+							<div class="well">
+								<span class="icons-features"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+								<h3>Faceboook</h3>
+								<h3>Integration</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="banner-test" class="banner banner-half">
+			<div class="container text-center">
+				<p>"I never have trouble finding things to do or the best products anymore" - Jane Doe</p>
+				<button type="button" class="btn btn-cta" name="Download"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download</button>
+				<button type="button" class="btn btn-cta" name="Share"><i class="fa fa-share-alt" aria-hidden="true"></i>&nbsp;Share</button>
+			</div>
+		</section>
+
+		<section id="download-badges">
+			<div class="container text-center">
+				<a href="#" ><img class="badge-store" alt="Apple App Store Badge" src="icons/svgs/apple_app_store_badge.svg" /></a>
+				<a href="#" ><img class="badge-store" alt="Google Play Store Badge" src="icons/pngs/google_play_store_badge.png"/></a>
+			</div>
+		</section>
+
+		<section id="footer">
+			<div class="containter text-center">
+				<div class="icons-social">
+					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+				<p>Copyright 2016 Recommends from Friends, Inc.</p>
+			</div>
+		</section>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-		<!-- Latest compiled and minified JavaScript -->
+		<!-- BOOTSTRAP!!! Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
->>>>>>> parent of 687e52f... Added Styles
+
+		<!-- Font Awesome Icons Script-->
+		<script src="https://use.fontawesome.com/c18042c820.js"></script>
 	</body>
 </html>
