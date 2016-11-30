@@ -10,10 +10,12 @@ html, body {
 h1,h2,h3,h4,h5,h6 {
   line-height: 1px;
   color: rgba(0,0,0,0.87);
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 76px;
+  font-size: 48px;
   line-height: 1;
 }
 
@@ -65,11 +67,12 @@ section {
 }
 
 .text-point {
+  margin-top: 100px;
   display: inline-block;
 }
 
 .text-point p {
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .img-demo {
@@ -86,13 +89,10 @@ section {
 }
 
 .badge-store {
-  height: 130px;
-  margin: 25px;
+  height: 80px;
 }
 
 .badge-store:hover {
-  height: 140px;
-  margin: 15px;
 }
 
 #footer {
@@ -117,7 +117,7 @@ section {
 
 @media (max-width: 970px) {
   .text-point {
-    margin: 0px;
+    margin-top: 0px;
     text-align: center;
     width: 100%;
   }
@@ -163,6 +163,11 @@ section {
 
   .badge-store {
     height: 60px;
+    margin: 20px 40px 0px 40px;
+  }
+
+  .bagde-store:hover {
+    margin-top: 10px;
   }
 
   #footer {
@@ -267,7 +272,6 @@ section {
   color: #FFFFFF;
   font-size: 124px;
   line-height: 1;
-  font-family: 'Lato', sans-serif;
   font-weight: bold;
   margin: 0px;
 }
@@ -276,7 +280,6 @@ section {
   color: #FFFFFF;
   font-size: 64px;
   margin-top: 0px;
-  font-family: 'Lato', sans-serif;
   font-weight: lighter;
   line-height: 1;
 }
@@ -286,8 +289,17 @@ section {
   background-size: cover;
 }
 
-#banner-users h1, #banner-users h2 {
+#banner-users h1 {
   color: #FFFFFF;
+  font-size: 76px;
+}
+
+#banner-users h2 {
+  color: #FFFFFF;
+}
+
+#features {
+  background-color: #F8F8F8;
 }
 
 .icons-features {
@@ -304,20 +316,19 @@ section {
 }
 
 #features a .well {
-  background-color: #F8F8F8;
+  margin: 5px 0px;
+  background-color: white;
   border: none;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
   color: rgba(0,0,0,0.87);
 }
 
 #features a:hover .well  {
-  background-color: #003BFF;
-  box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
-  color: white;
+  margin: 0px;
+  box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
 }
 
 #features a .well:hover h3, #features a:hover {
-  color: white;
   text-decoration: none;
 }
 
@@ -328,7 +339,7 @@ section {
 
 #banner-test p {
   color: white;
-  font-size: 56px;
+  font-size: 36px;
 }
 
 @media (max-width: 768px) {
