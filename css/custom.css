@@ -23,9 +23,14 @@ h2 {
   font-weight: normal;
 }
 
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .banner {
   background-attachment: fixed;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 150px;
   text-align: center;
 }
@@ -36,11 +41,6 @@ h2 {
 
 .banner-full {
   min-height: 100%;
-}
-
-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .caps {
@@ -66,6 +66,8 @@ section {
   color: #FFFFFF;
 }
 
+/* Text Styles for Points of emphasis */
+
 .text-point {
   margin-top: 100px;
   display: inline-block;
@@ -75,18 +77,8 @@ section {
   font-size: 20px;
 }
 
-.img-demo {
-  max-height: 80vh;
-  display: inline-block;
-}
 
-.left-float {
-  float: left;
-}
-
-.right-float {
-  float: right;
-}
+/* Download Badges Styles */
 
 .badge-store {
   height: 80px;
@@ -97,41 +89,31 @@ section {
   margin-top: 15px;
 }
 
+/* Footer Styles */
+
 #footer {
   background-color: #383838;
   padding-top: 50px;
   padding-bottom: 10px;
 }
 
-.icons-social {
-  margin-bottom: 100px;
-}
-
-.icons-social a {
-  margin: 0px 10px;
-  font-size: 100px;
-  color: white;
-}
-
 #footer p {
   color: white;
 }
 
-@media (max-width: 970px) {
-  .text-point {
-    margin-top: 0px;
-    text-align: center;
-    width: 100%;
-  }
+.icons-social {
+  margin-bottom: 100px;
+}
 
-  .text-point p {
-    font-size: 24px;
-  }
+.icons-social a i {
+  margin: 10px 10px;
+  font-size: 100px;
+  color: white;
+}
 
-  .img-demo {
-    margin-top: 0px;
-    max-height: 80vh;
-  }
+.icons-social a i:hover {
+  font-size: 110px;
+  margin: 0px 6px;
 }
 
 @media (max-width: 768px) {
@@ -232,7 +214,235 @@ section {
   top: 20px;
 }
 
+/***************************/
+/**** Home Page Styles *****/
+/***************************/
+
+/* Homepage Banner Styles*/
+.banner-title h1 {
+  color: #FFFFFF;
+  font-size: 124px;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.banner-title h4 {
+  color: #FFFFFF;
+  font-size: 64px;
+  margin-top: 0px;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+#banner-home {
+  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-home.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+
+#banner-users {
+  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-users.jpg");
+  background-size: cover;
+}
+
+#banner-users h1 {
+  color: #FFFFFF;
+  font-size: 76px;
+}
+
+#banner-users h2 {
+  color: #FFFFFF;
+}
+
+#banner-test {
+  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-test.jpg");
+  background-size: cover;
+}
+
+#banner-test p {
+  color: white;
+  font-size: 36px;
+}
+
+/********************************/
+/* Homepage and Features Styles */
+.icons-features {
+  font-size: 150px;
+}
+
+.features {
+  background-color: #F8F8F8;
+}
+
+.features h1 {
+  margin-bottom: 50px;
+}
+
+.features h3 {
+  font-size: 32px;
+  line-height: 20px;
+}
+
+.features a .well {
+  margin: 5px 0px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+  color: rgba(0,0,0,0.87);
+}
+
+.features a:hover .well  {
+  margin: 0px;
+  box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
+}
+
+.features a .well:hover h3, .features a:hover {
+  text-decoration: none;
+}
+
+/***************************/
+/*** Features Page Styles **/
+/***************************/
+#banner-features {
+  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-features.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+#banner-features h1 {
+  color: white;
+}
+
+.img-features {
+  max-height: 600px;
+}
+
+.features-point {
+  margin-top: 15vw;
+  display: inline-block;
+}
+
+.features-point p {
+  font-size: 20px;
+}
+
+#location-services {
+  background-color: #F8F8F8;
+}
+
+/***************************/
+/** Contact Us Page Styles */
+/***************************/
+#banner-contact {
+  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-contact.jpeg");
+  background-size: cover;
+}
+
+#banner-contact h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+#banner-contact h2 {
+  font-size: 32px;
+  color: white;
+}
+
+#banner-contact a .well {
+  margin: 5px 0px;
+  background-color: #003BFF;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+  color: white;
+}
+
+#banner-contact a:hover .well  {
+  margin: 0px;
+  box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
+}
+
+#banner-contact a .well:hover h2, #banner-contact a:hover {
+  text-decoration: none;
+}
+
+.panel, .panel-group, .panel-collapse {
+  border: none;
+  outline: 0px;
+  box-shadow: none;
+}
+
+.panel-heading {
+  position: relative;
+  background-color: #F8F8F8;
+  padding: 30px;
+  width: 80%;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+.panel-heading:active {
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+.panel-heading a {
+  font-size: 24px;
+}
+
+.panel-body {
+  background-color: #00CEFF;
+  padding: 30px;
+  margin-left: 20%;
+  margin-bottom: 60px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
+}
+
+.triangle-body {
+  position: relative;
+}
+
+.triangle-body:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    border-width: 0px 30px 30px;
+    border-style: solid;
+    border-color: #00CEFF transparent;
+    display: block;
+    width: 0;
+}
+
+
+@media (max-width: 970px) {
+  /* Text Styles for Points of emphasis */
+  .text-point {
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text-point p {
+    font-size: 24px;
+  }
+
+  .img-demo {
+    margin-top: 0px;
+    max-height: 80vh;
+  }
+}
+
 @media (max-width: 768px) {
+  /***************************/
+  /** General Mobile Styles **/
+  /***************************/
   .btn-nav {
     visibility: hidden;
   }
@@ -251,95 +461,11 @@ section {
     padding: 10px;
     margin: 0px;
   }
-}
 
+  /***************************/
+  /** Homepage Mobile Styles */
+  /***************************/
 
-/***************************/
-/**** Home Page Styles *****/
-/***************************/
-
-/* Homepage Banner Styles*/
-#banner-home {
-  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-home.jpeg");
-  background-size: cover;
-  text-align: center;
-}
-
-.banner-title h1 {
-  color: #FFFFFF;
-  font-size: 124px;
-  line-height: 1;
-  font-weight: bold;
-  margin: 0px;
-}
-
-.banner-title h4 {
-  color: #FFFFFF;
-  font-size: 64px;
-  margin-top: 0px;
-  font-weight: lighter;
-  line-height: 1;
-}
-
-#banner-users {
-  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-users.jpg");
-  background-size: cover;
-}
-
-#banner-users h1 {
-  color: #FFFFFF;
-  font-size: 76px;
-}
-
-#banner-users h2 {
-  color: #FFFFFF;
-}
-
-#features {
-  background-color: #F8F8F8;
-}
-
-.icons-features {
-  font-size: 150px;
-}
-
-#features h1 {
-  margin-bottom: 50px;
-}
-
-#features h3 {
-  font-size: 32px;
-  line-height: 20px;
-}
-
-#features a .well {
-  margin: 5px 0px;
-  background-color: white;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
-  color: rgba(0,0,0,0.87);
-}
-
-#features a:hover .well  {
-  margin: 0px;
-  box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
-}
-
-#features a .well:hover h3, #features a:hover {
-  text-decoration: none;
-}
-
-#banner-test {
-  background-image: linear-gradient(rgba(255, 87, 34, 0.85), rgba(255, 87, 34, 0.85)), url("../images/banner-test.jpg");
-  background-size: cover;
-}
-
-#banner-test p {
-  color: white;
-  font-size: 36px;
-}
-
-@media (max-width: 768px) {
   #banner-home {
     padding-top: 150px;
   }
@@ -366,5 +492,20 @@ section {
 
   #banner-test p {
     font-size: 24px;
+  }
+
+  /***************************/
+  /*** Features Page Styles **/
+  /***************************/
+
+  .img-features {
+    margin: 0 auto;
+    max-height: 400px;
+  }
+
+  .features-point {
+    margin-top: 0px;
+    display: inline-block;
+    text-align: center;
   }
 }
