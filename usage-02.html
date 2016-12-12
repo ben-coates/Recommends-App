@@ -34,10 +34,15 @@
 
 		<section id="banner-users" class="banner banner-full">
 			<div class="container">
-				<div>
-					<h1 class="caps">1,024,032 users</h1>
-					<h2>Are your friends waiting?</h2>
-					<button type="button" onclick="random()" class="btn btn-cta" id="login"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Temporarily Login</button>
+				<div id="overlay">
+					<div class="row">
+						<div id="profile-failed">
+						</div>
+					</div>
+					<div id="message-failed" class="row">
+						<p>Looks like your friends don’t know about Recommends yet.</p>
+					</div>
+					<button type="button" class="btn btn-cta" name="Share">Ask them to join&nbsp;<i class="fa fa-share-alt" aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</section>
@@ -69,16 +74,15 @@
 		<!-- Font Awesome Icons Script-->
 		<script src="https://use.fontawesome.com/c18042c820.js"></script>
 
-    <script>
-      function random() {
-      var num = Math.floor((Math.random() * 10) + 1);
-      if( num <= 8) {
-        window.location.href='usage-01.html';
-      }
-      else {
-        window.location.href='usage-02.html';
-      }
-    };
-    </script>
+		<script>
+			$.getJSON( "https://randomuser.me/api/?nat=us", function( data ) {
+					console.log(data);
+					var imgsrc = data.results[0].picture.medium;
+					$( "#profile-failed" ).append( "<img src=" + imgsrc + ">" );
+
+					var firstname = data.results[0].name.first;
+					$( "#profile-failed" ).append( "<h5>Sorry, " + firstname + "!</h5>" );
+			});
+		</script>
 	</body>
 </html>

@@ -34,10 +34,18 @@
 
 		<section id="banner-users" class="banner banner-full">
 			<div class="container">
-				<div>
-					<h1 class="caps">1,024,032 users</h1>
-					<h2>Are your friends waiting?</h2>
-					<button type="button" onclick="random()" class="btn btn-cta" id="login"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Temporarily Login</button>
+				<div id="overlay">
+					<div class="row">
+						<div id="share" class="col-md-6 col-md-push-6">
+							<a href="#"><h3>Share&nbsp;<i class="fa fa-share-alt" aria-hidden="true"></i></h3></a>
+						</div>
+						<div id="profile" class="col-md-6 col-md-pull-6">
+						</div>
+					</div>
+					<div id="friends-message" class="row">
+					</div>
+					<div id="friends" class="row">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -69,16 +77,29 @@
 		<!-- Font Awesome Icons Script-->
 		<script src="https://use.fontawesome.com/c18042c820.js"></script>
 
-    <script>
-      function random() {
-      var num = Math.floor((Math.random() * 10) + 1);
-      if( num <= 8) {
-        window.location.href='usage-01.html';
-      }
-      else {
-        window.location.href='usage-02.html';
-      }
-    };
-    </script>
+		<script>
+			$.getJSON( "https://randomuser.me/api/?nat=us", function( data ) {
+					console.log(data);
+					var imgsrc = data.results[0].picture.medium;
+					$( "#profile" ).append( "<img class='profile-img' src=" + imgsrc + ">" );
+
+					var firstname = data.results[0].name.first;
+					$( "#profile" ).append( "<h5 class='profile-name'>Hi " + firstname + "!</h5>" );
+			});
+		</script>
+
+		<script>
+			var num = Math.floor((Math.random() * 24) + 1);
+
+			$.getJSON( "https://randomuser.me/api/?results=" + num + "&nat=us", function( data ) {
+				console.log(data);
+				$( "#friends-message" ).append( "<p>" + data.info.results + " of your friends are using recommends</p>" );
+				for (i = 0; i < data.info.results; i++ ) {
+					var imgsrc = data.results[i].picture.thumbnail;
+					var name = data.results[i].name.first + " " + data.results[i].name.last;
+					$( "#friends" ).append( "<div class='col-xs-6 col-md-4 col-lg-3 friend'><img src=" + imgsrc + "><p>" + name + "</p></div>" );
+				}
+			});
+		</script>
 	</body>
 </html>

@@ -116,52 +116,6 @@ section {
   margin: 0px 6px;
 }
 
-@media (max-width: 768px) {
-  .banner {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .banner-full, .banner-half {
-    min-height: 0%;
-  }
-
-  section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .btn-cta, .btn-cta:hover {
-    font-size: 16px;
-    padding: 10px 25px;
-    margin: 20px 0px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 16px;
-  }
-
-  .badge-store {
-    height: 60px;
-  }
-
-  #footer {
-    padding-top: 20px;
-  }
-
-  .icons-social {
-    margin-bottom: 30px;
-  }
-
-  .icons-social a {
-    font-size: 48px;
-  }
-}
-
 /***************************/
 /**** Navigation Styles ****/
 /***************************/
@@ -368,56 +322,113 @@ section {
   text-decoration: none;
 }
 
-.panel, .panel-group, .panel-collapse {
+#FAQ h1 {
+  margin-bottom: 30px;
+  font-size: 64px;
+}
+
+.panel-group .panel {
   border: none;
   outline: 0px;
-  box-shadow: none;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+}
+
+.panel-group .panel:hover {
+  box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
 }
 
 .panel-heading {
   position: relative;
   background-color: #F8F8F8;
-  padding: 30px;
-  width: 80%;
-  margin-bottom: 20px;
   border: none;
   outline: none;
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 }
 
-.panel-heading:active {
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+.panel-title {
+  padding: 15px;
+  font-size: 20px;
 }
 
-.panel-heading a {
-  font-size: 24px;
+.panel a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.87);
 }
 
 .panel-body {
-  background-color: #00CEFF;
+  background-color: white;
   padding: 30px;
-  margin-left: 20%;
-  margin-bottom: 60px;
-  font-size: 24px;
+  font-size: 16px;
   border: none;
   outline: none;
-  box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
 }
 
-.triangle-body {
-  position: relative;
+#overlay {
+  background-color: white;
+  padding: 50px;
 }
 
-.triangle-body:before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    right: 50px;
-    border-width: 0px 30px 30px;
-    border-style: solid;
-    border-color: #00CEFF transparent;
-    display: block;
-    width: 0;
+#profile {
+    text-align: left;
+}
+
+#profile-failed {
+  text-align: center;
+}
+
+#profile img, #profile-failed img {
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#profile h5, #profile-failed h5 {
+  text-transform: capitalize;
+  font-size: 48px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#share {
+  text-align: right;
+}
+
+#share h3{
+  color: rgba(0,0,0,0.87);
+  text-transform: uppercase;
+}
+
+#friends {
+  text-align: left;
+}
+
+.friend {
+  margin-top: 10px;
+}
+
+.friend img {
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.friend p {
+  text-transform: capitalize;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#friends-message p {
+  color: rgba(0,0,0,0.87);
+  font-size: 44px;
+  padding: 40px 0px;
+}
+
+#message-failed p {
+  color: rgba(0,0,0,0.87);
+  font-size: 32px;
+  padding-top: 40px;
 }
 
 
